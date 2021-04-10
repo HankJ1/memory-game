@@ -56,7 +56,7 @@ const Card = props => {
                 <div className='card-photo'>
                     <img className="card-photo-img" src={props.charURL}/>
                 </div>
-                <span className='top-span'>______________________</span>
+                <div className='top-span'></div>
                 <div className="card-caption">{props.charName}</div>
             </div>
 
@@ -119,8 +119,8 @@ const CardContainer = props => {
     return (
         <div>
             <div className="main-card-container">
-                <div className='left-column'></div>
-                <div className='right-column'></div>
+                {/* <div className='left-column'></div>
+                <div className='right-column'></div> */}
                 {
                     orderedArray.map((num, index) => {
                             return <Card number={num} level={level} levelCleared={updateLevel} charURL={characterArray[num].url} charName={characterArray[num].name} 

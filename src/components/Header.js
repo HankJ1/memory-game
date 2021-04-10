@@ -13,7 +13,7 @@ const Header = props => {
                 </div>
                 <div className="score-container">
                     <div className="score-container-sub" id="current-score">Current Score:</div> <span className='score-span'>{props.recievedCurrentScore}</span>
-                    <div className="score-container-sub" id="people-remaining">Images Remaining:</div><span className='score-span'>{props.remainingPeople}</span>
+                    <div className="score-container-sub" id="people-remaining">Remaining:</div><span className='score-span'>{props.remainingPeople}</span>
                     <div className="score-container-sub" id="best-score">Best Score:</div><span className='score-span'>{props.recievedBestScore}</span>
                 </div>
             </div>
